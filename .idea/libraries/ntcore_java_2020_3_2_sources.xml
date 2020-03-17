@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="ntcore-java-2020.3.2-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ntcore-java-2020.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ntcore-jni-2020.3.2-windowsx86-64.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ntcore-jni-2020.3.2-windowsx86-64debug.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wpiutil-java-2020.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/ntcore-java-2020.3.2-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/wpiutil-java-2020.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
