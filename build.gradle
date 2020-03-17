@@ -1,0 +1,41 @@
+apply plugin : 'java'
+apply plugin : 'application'
+
+group '4186'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+application {
+    mainClassName = 'main'
+    applicationDefaultJvmArgs = ['-Dgreeting.language=en']
+}
+
+jar {
+    baseName = '4186'
+    manifest {
+        attributes 'Main-Class': 'main'
+    }
+}
+
+
+repositories {
+    mavenCentral()
+    maven { url "https://frcmaven.wpi.edu/artifactory/release/" }
+}
+
+dependencies {
+    // Add ntcore-java
+    compile "edu.wpi.first.ntcore:ntcore-java:2020.3.2"
+
+    // Add wpiutil-java
+    compile "edu.wpi.first.wpiutil:wpiutil-java:2020.3.2"
+
+        // Add ntcore-jni for runtime. We are adding all supported platforms
+    // so that our application will work on all supported platforms.
+    runtime "edu.wpi.first.ntcore:ntcore-jni:2020.3.2:windowsx86"
+    runtime "edu.wpi.first.ntcore:ntcore-jni:2020.3.2:windowsx86-64"
+    runtime "edu.wpi.first.ntcore:ntcore-jni:2020.3.2:linuxx86-64"
+    runtime "edu.wpi.first.ntcore:ntcore-jni:2020.3.2:osxx86-64"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
