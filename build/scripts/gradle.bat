@@ -66,7 +66,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\4186-1.0.jar;%APP_HOME%\lib\ntcore-java-2020.3.2.jar;%APP_HOME%\lib\wpiutil-java-2020.3.2.jar;%APP_HOME%\lib\ntcore-jni-2020.3.2-windowsx86.jar;%APP_HOME%\lib\ntcore-jni-2020.3.2-windowsx86-64.jar;%APP_HOME%\lib\ntcore-jni-2020.3.2-linuxx86-64.jar;%APP_HOME%\lib\ntcore-jni-2020.3.2-osxx86-64.jar
 
 @rem Execute gradle
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS%  -classpath "%CLASSPATH%" main %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS%  -classpath "%CLASSPATH%" NetworkTablesDesktopClient %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
